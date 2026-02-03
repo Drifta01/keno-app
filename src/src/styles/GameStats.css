@@ -1,0 +1,42 @@
+.game-stats {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #667eea;
+}
+
+.stat-value.match {
+  color: #28a745;
+}
+
+.stat-value.active {
+  color: #ffc107;
+}
+
+.stat-value.inactive {
+  color: #999;
+}

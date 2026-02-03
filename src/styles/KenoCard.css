@@ -1,0 +1,66 @@
+.keno-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #e9ecef;
+}
+
+.keno-card h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #333;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.number-button {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid #dee2e6;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-button:hover:not(:disabled) {
+  background: #f0f0f0;
+  border-color: #667eea;
+  transform: scale(1.05);
+}
+
+.number-button.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #764ba2;
+}
+
+.number-button.selected:hover:not(:disabled) {
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.number-button.drawn {
+  background: #28a745;
+  color: white;
+  border-color: #218838;
+  cursor: default;
+}
+
+.number-button:disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .numbers-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

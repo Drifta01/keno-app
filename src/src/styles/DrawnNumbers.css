@@ -1,0 +1,44 @@
+.drawn-numbers {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.drawn-numbers h2 {
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  margin: 10px 0;
+}
+
+.numbers-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.drawn-number {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+}
+
+.no-numbers {
+  text-align: center;
+  color: #999;
+  padding: 20px 0;
+}
